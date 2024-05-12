@@ -1,0 +1,141 @@
+/*Pie de pagina*/
+
+.pie-pagina {
+    display: grid;
+    width: 100vw;
+    background-color: rgb(12, 12, 12);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo siguenos citas"
+        "copyri copyri copyri"
+    ;
+}
+
+.footer-logo {
+    grid-area: logo;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.footer-logo img {
+    width: 250px;
+    transition: all 0.25s;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.1);
+}
+
+.siguenos {
+    grid-area: siguenos;
+    align-content: center;
+    justify-content: center;
+    padding-left: 45px;
+}
+
+.siguenos-siguenos {
+    color: rgb(173, 139, 1);
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.siguenos-redes {
+
+    display: flex;
+    grid-area: a;
+    align-content: center;
+    justify-content: center;
+}
+
+.siguenos-redes a {
+    color: #e8e8e8;
+    transition: all 0.25s;
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.siguenos-redes a:hover {
+    transform: scale(1.2);
+}
+
+.citas {
+    grid-area: citas;
+    align-content: center;
+}
+
+.citas-citas {
+    color: rgb(173, 139, 1);
+    padding-top: 30px;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.citas-telefono {
+    color: #e8e8e8;
+    display: flex;
+    grid-area: telefono;
+    justify-content: center;
+    align-items: center;
+}
+
+.citas-telefono a {
+    color: #11c50b;
+    transition: all 0.25s;
+}
+
+.citas-telefono a:hover {
+    transform: scale(1.2);
+}
+
+.siguenos-telefono .numero {
+    color: #e8e8e8;
+    align-content: center;
+}
+
+.copyright {
+    grid-area: copyri;
+    background-color: chocolate;
+    background: rgb(235, 191, 219);
+    background: radial-gradient(circle, rgba(235, 191, 219, 1) 0%, rgba(218, 118, 212, 1) 50%, rgba(193, 70, 143, 1) 100%);
+    text-align: center;
+}
+
+@media (width<700px) {
+    .pie-pagina {
+        display: grid;
+        width: 100%;
+        background-color: rgb(12, 12, 12);
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo"
+            "siguenos citas"
+            "copyri copyri"
+        ;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .pie-pagina {
+        display: grid;
+        width: 100vw;
+        background-color: rgb(12, 12, 12);
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo"
+            "siguenos citas"
+            "copyri copyri"
+        ;
+    }
+
+}

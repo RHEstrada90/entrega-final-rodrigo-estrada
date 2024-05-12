@@ -1,0 +1,744 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Signika", sans-serif;
+  font-size: 20px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  background-color: rgb(125, 169, 130);
+  width: 100vw;
+  background: rgb(245, 231, 239);
+  background: radial-gradient(circle, rgb(245, 231, 239) 0%, rgb(249, 237, 244) 50%, rgb(255, 255, 255) 100%);
+}
+
+/*Navegacion*/
+.navbar-brand img {
+  height: 90px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.2);
+}
+
+.bg-violeta {
+  background-color: rgb(253, 253, 253);
+}
+
+.nav-item a {
+  color: rgb(0, 0, 0);
+}
+
+.nav-item a:hover {
+  color: rgb(202, 92, 151);
+  transform: scale(1.03);
+}
+
+.act {
+  color: aqua;
+}
+
+/*Pie de pagina*/
+.pie-pagina {
+  display: grid;
+  width: 100vw;
+  background-color: rgb(12, 12, 12);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "logo siguenos citas" "copyri copyri copyri";
+}
+
+.footer-logo {
+  grid-area: logo;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.footer-logo img {
+  width: 250px;
+  transition: all 0.25s;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.1);
+}
+
+.siguenos {
+  grid-area: siguenos;
+  align-content: center;
+  justify-content: center;
+  padding-left: 45px;
+}
+
+.siguenos-siguenos {
+  color: rgb(173, 139, 1);
+  text-align: center;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+.siguenos-redes {
+  display: flex;
+  grid-area: a;
+  align-content: center;
+  justify-content: center;
+}
+
+.siguenos-redes a {
+  color: #e8e8e8;
+  transition: all 0.25s;
+  font-size: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.siguenos-redes a:hover {
+  transform: scale(1.2);
+}
+
+.citas {
+  grid-area: citas;
+  align-content: center;
+}
+
+.citas-citas {
+  color: rgb(173, 139, 1);
+  padding-top: 30px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.citas-telefono {
+  color: #e8e8e8;
+  display: flex;
+  grid-area: telefono;
+  justify-content: center;
+  align-items: center;
+}
+
+.citas-telefono a {
+  color: #11c50b;
+  transition: all 0.25s;
+}
+
+.citas-telefono a:hover {
+  transform: scale(1.2);
+}
+
+.siguenos-telefono .numero {
+  color: #e8e8e8;
+  align-content: center;
+}
+
+.copyright {
+  grid-area: copyri;
+  background-color: chocolate;
+  background: rgb(235, 191, 219);
+  background: radial-gradient(circle, rgb(235, 191, 219) 0%, rgb(218, 118, 212) 50%, rgb(193, 70, 143) 100%);
+  text-align: center;
+}
+
+@media (width < 700px) {
+  .pie-pagina {
+    display: grid;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "logo logo" "siguenos citas" "copyri copyri";
+  }
+}
+@media screen and (max-width: 500px) {
+  .pie-pagina {
+    display: grid;
+    width: 100vw;
+    background-color: rgb(12, 12, 12);
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "logo logo" "siguenos citas" "copyri copyri";
+  }
+}
+/*contacto*/
+.ficha-contacto {
+  height: 100%;
+  width: 100vw;
+  padding: 40px;
+  background-image: url(../images/artistico3.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.card-contacto {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  padding: 30px 90px;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  background-color: rgb(196, 196, 196);
+  background-color: #e8e8e8;
+  background-image: url(../images/burbujas.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90%;
+}
+.card-contacto h1 {
+  font-size: 60px;
+  color: rgb(6, 6, 6);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+.card-contacto h2 {
+  font-size: 40px;
+  color: rgb(173, 139, 1);
+  padding: 10px;
+}
+.card-contacto p {
+  color: #000000;
+  font-size: 25px;
+}
+.card-contacto ul {
+  padding-left: 30px;
+  list-style: square;
+  color: rgb(0, 0, 0);
+}
+.card-contacto li {
+  color: #000000;
+  font-size: 25px;
+  list-style: none;
+  padding: 10px;
+}
+.card-contacto button {
+  height: 50px;
+  width: 230px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #25D366;
+  border-radius: 10px;
+}
+.card-contacto button:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 500px) {
+  .ficha-contacto {
+    height: 100%;
+    width: 100vw;
+    padding: 20px;
+    background-image: url(../images/artistico3.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+  }
+  .card-contacto {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: rgb(196, 196, 196);
+    opacity: 90%;
+  }
+  .card-contacto h1 {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+  }
+  .card-contacto h2 {
+    font-size: 40px;
+    color: rgb(173, 139, 1);
+    padding: 10px;
+  }
+  .card-contacto p {
+    color: #000000;
+    font-size: 25px;
+  }
+  .card-contacto ul {
+    padding-left: 30px;
+    list-style: square;
+    color: rgb(0, 0, 0);
+  }
+  .card-contacto li {
+    color: #000000;
+    font-size: 40px;
+    text-decoration: none;
+  }
+  .card-contacto button {
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #25D366;
+    border-radius: 10px;
+  }
+}
+/*Galeria index*/
+.gallery {
+  height: 430px;
+  width: 100vw;
+  display: flex;
+}
+.gallery img {
+  width: 10px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.gallery img:hover {
+  cursor: all-scroll;
+  width: 300px;
+  opacity: 1;
+}
+
+/* Slider auto*/
+.slider-box {
+  display: none;
+}
+
+/*slide auto bootstrap*/
+.carousel {
+  display: none;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/*Banner index*/
+.banner {
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbf5e0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.banner .videobanner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.banner .h2 {
+  font-size: 90px;
+  font-weight: 500;
+  font-family: Yellowtail, Signika, sans-serif;
+  z-index: 1;
+}
+.banner .p1 {
+  font-size: 60px;
+  font-weight: 600;
+  font-style: oblique;
+  z-index: 1;
+}
+
+/*Cards index*/
+.serv {
+  width: 100vw;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.container {
+  padding-bottom: 30px;
+}
+.container .card-title {
+  font-size: 30px;
+}
+.container .card-body {
+  background: rgb(243, 210, 238);
+  background: radial-gradient(circle, rgb(243, 210, 238) 0%, rgb(244, 232, 242) 50%, rgb(255, 255, 255) 100%);
+  background-image: url(../images/caqui.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .card-footer {
+  background: rgb(243, 240, 231);
+  background: linear-gradient(180deg, rgb(243, 240, 231) 0%, rgb(243, 240, 231) 14%, rgb(255, 255, 255) 100%);
+}
+
+.card {
+  min-width: 16rem;
+  box-shadow: 0 2px 2px rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+}
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgb(0, 0, 0);
+}
+.card img {
+  height: 200px;
+  width: 100%;
+}
+
+.cbtn {
+  height: 50px;
+  width: 70%;
+  background-color: #000000;
+  border-radius: 25px;
+  border-style: none;
+  transition: all 0.3s ease 0s;
+}
+.cbtn:hover {
+  background-color: rgb(202, 92, 151);
+}
+.cbtn a {
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}
+.cbtn a:hover {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 700px) {
+  .banner .h2 {
+    font-size: 70px;
+  }
+  .banner .p1 {
+    font-size: 50px;
+  }
+  .card img {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner .h2 {
+    font-size: 60px;
+  }
+  .banner .p1 {
+    font-size: 40px;
+  }
+  .card img {
+    height: 350px;
+  }
+}
+/*Ficha*/
+.fondo-ficha {
+  position: relative;
+}
+.fondo-ficha .videoficha {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.ficha {
+  width: 100vw;
+  display: grid;
+  background-color: #ffffff;
+  background-color: #e8e8e8;
+  background-image: url(../images/burbujas.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  grid-template-columns: minmax(400px, 1fr) 3fr;
+  grid-template-rows: auto;
+  grid-template-areas: "titulo titulo" "foto subtitulo-1" "foto texto-1" "foto subtitulo-2" "foto texto-2" "banner subtitulo-3" "banner texto-3" "banner boton";
+}
+.ficha .imagen {
+  align-content: center;
+  grid-area: foto;
+  z-index: 1;
+}
+.ficha .imagen img {
+  height: 600px;
+  width: 400px;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 15px;
+  z-index: 1;
+}
+.ficha h1 {
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  background: rgb(237, 231, 183);
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(61, 61, 61) 0%, rgb(0, 0, 0) 100%);
+  color: rgb(185, 162, 67);
+  font-size: 35px;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  grid-area: titulo;
+}
+.ficha h3 {
+  font-size: 25px;
+  color: rgb(207, 120, 91);
+  padding: 20px;
+  padding-top: 10px;
+  z-index: 1;
+}
+.ficha p {
+  font-size: 25px;
+  padding: 20px;
+  padding-left: 25px;
+  z-index: 1;
+}
+.ficha .ficha-banner {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  grid-area: banner;
+}
+.ficha .ficha-banner h2 {
+  font-size: 50px;
+  font-family: Yellowtail, Signika, sans-serif;
+  font-weight: 200;
+  z-index: 1;
+}
+.ficha .ficha-banner p {
+  font-size: 40px;
+  font-style: oblique;
+  font-weight: 600;
+  color: #000000;
+  z-index: 1;
+}
+.ficha .subtitulo-1 {
+  grid-area: subtitulo-1;
+}
+.ficha .subtitulo-2 {
+  grid-area: subtitulo-2;
+}
+.ficha .subtitulo-3 {
+  grid-area: subtitulo-3;
+}
+.ficha .texto-1 {
+  grid-area: texto-1;
+}
+.ficha .texto-2 {
+  grid-area: texto-2;
+}
+.ficha .texto-3 {
+  grid-area: texto-3;
+}
+
+.btn-area {
+  text-align: center;
+  z-index: 1;
+}
+.btn-area button {
+  font-weight: 700;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.btn-area button:hover {
+  background-color: rgb(202, 92, 151);
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+.btn-area a {
+  grid-area: boton;
+}
+
+/* gallery pages*/
+.gallery-social {
+  height: 600px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #e8e8e8;
+  background-image: url(../images/burbujas.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery-social img {
+  height: 400px;
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  z-index: 2;
+}
+.gallery-social img:hover {
+  height: 600px;
+  width: 500px;
+  cursor: all-scroll;
+  opacity: 1;
+}
+.gallery-social .back {
+  background-color: #000000;
+  background: rgb(219, 163, 163);
+  background: rgb(245, 184, 225);
+  background: radial-gradient(circle, rgb(245, 184, 225) 0%, rgb(255, 252, 243) 0%, rgb(229, 177, 230) 100%);
+  opacity: 50%;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+}
+.gallery-social .videogallery {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.gallery-title {
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(17, 17, 17);
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(61, 61, 61) 0%, rgb(0, 0, 0) 100%);
+}
+.gallery-title h2 {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  justify-content: center;
+  font-size: 30px;
+  color: rgb(185, 162, 67);
+}
+
+@media (width < 900px) {
+  body {
+    width: 100vw;
+  }
+  .ficha {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "banner" "foto" "titulo" "subtitulo-1" "texto-1" "subtitulo-2" "texto-2" "subtitulo-3" "texto-3" "boton";
+  }
+  .ficha .imagen {
+    justify-items: center;
+    margin: 0 auto;
+  }
+}
+@media (width < 700px) {
+  .ficha {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "banner" "foto" "titulo" "subtitulo-1" "texto-1" "subtitulo-2" "texto-2" "subtitulo-3" "texto-3" "boton";
+  }
+  .ficha .imagen {
+    justify-items: center;
+    margin: 0 auto;
+  }
+  .ficha .imagen img {
+    height: 550px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .ficha .btn button {
+    width: 18rem;
+  }
+}
+/*Mobile display*/
+@media screen and (max-width: 500px) {
+  body {
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+  }
+  header .nav-links {
+    display: none;
+  }
+  /*Gallery*/
+  .gallery {
+    display: none;
+  }
+  /*Gallery social*/
+  .gallery-social {
+    display: none;
+  }
+  /*Card index mobile*/
+  .cbtn {
+    height: 50px;
+    width: 14rem;
+    background-color: #000000;
+    border-radius: 25px;
+  }
+  /*Slider bootstrap*/
+  .carousel {
+    display: flex;
+  }
+  /*Banner index*/
+  .ficha-banner {
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ficha-banner h2 {
+    font-size: 70px;
+    font-family: Yellowtail, Signika, sans-serif;
+    font-weight: 200;
+  }
+  .ficha-banner p {
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: 600;
+    color: #000000;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

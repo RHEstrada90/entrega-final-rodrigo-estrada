@@ -1,0 +1,15 @@
+//Base
+@import "base/reset";
+@import "base/vars";
+
+//components
+@import "components/navbar";
+@import "components/footer";
+
+//layouts
+@import "layouts/agendar";
+@import "layouts/index";
+@import "layouts/pages";
+
+//abstracts
+@import "abstracts/mixin"

@@ -1,0 +1,29 @@
+@import "../abstracts/mixin";
+/*Navegacion*/
+
+.navbar-brand img {
+    @include hyw(90px, auto);
+    transition: all 0.3s;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.2);
+}
+
+.bg-violeta {
+    background-color: rgb(253, 253, 253);
+}
+
+.nav-item a {
+    color: rgb(0, 0, 0);
+
+}
+
+.nav-item a:hover {
+    color: rgb(202, 92, 151);
+    transform: scale(1.03)
+}
+
+.act {
+    color: aqua;
+}

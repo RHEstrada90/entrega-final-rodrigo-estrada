@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Signika", sans-serif;
+    font-size: 20px;
+    max-width: 100%;
+    max-height: 100%;
+
+
+}
+
+body {
+    background-color: rgb(125, 169, 130);
+    width: 100vw;
+    background: rgb(245, 231, 239);
+    background: radial-gradient(circle, rgba(245, 231, 239, 1) 0%, rgba(249, 237, 244, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}

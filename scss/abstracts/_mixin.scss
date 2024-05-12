@@ -1,0 +1,9 @@
+@mixin hyw ($h, $w) {
+    height: $h;
+    width: $w;
+}
+
+@mixin center {
+    justify-content: center;
+    align-items: center;
+}
